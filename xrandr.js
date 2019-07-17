@@ -53,9 +53,9 @@ const GetDisplaySettings = function(chain) {
 
 
 const ReOrientDisplay = function(orientation, chain) {
-  if(oriantation == undefined)
+  if(orientation == undefined)
     return chain(`bad argument`);
-  exec(`xrandr -o ${oriantation}`, chain); 
+  exec(`xrandr -o ${orientation}`, chain); 
 };
 
 
