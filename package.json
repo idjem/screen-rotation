@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint ."
   },
   "author": "",
   "repository": {
@@ -14,5 +14,8 @@
   "license": "ISC",
   "optionalDependencies": {
     "winapi": "^2.7.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-ivs": "^2.1.0"
   }
 }

@@ -17,7 +17,7 @@ var xrandrParse = function (src) {
       let m = re.connected.exec(line);
       query = {connected : true};
       query['orientation'] = SCREEN_ORIENTATION[m[4]] || '0';
-      query['Size']        = {};      
+      query['Size']        = {};
       if(m[2] && m[3]) {
         if(['0', '2'].indexOf(query['orientation']) !== -1) {
           query['Size']['Width'] = m[2];
@@ -55,7 +55,7 @@ const GetDisplaySettings = function(chain) {
 const ReOrientDisplay = function(orientation, chain) {
   if(orientation == undefined)
     return chain(`bad argument`);
-  exec(`xrandr -o ${orientation}`, chain); 
+  exec(`xrandr -o ${orientation}`, chain);
 };
 
 
